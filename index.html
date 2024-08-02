@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple Weather App</title>
+		<link rel="shortcut icon" href="src/icons/icon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="public/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=NTR&display=swap" rel="stylesheet" />
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</head>
+	<body>
+		<div class="fixed left-0 top-0 z-10 w-full bg-orange text-white" id="title">
+			<div class="container flex items-center justify-end p-4 md:justify-center">
+				<p class="text-center text-xl font-medium md:text-2xl">My Weather</p>
+			</div>
+		</div>
+		<div class="container my-[8rem] flex flex-col items-center justify-center gap-16 md:my-36">
+			<form action="" method="get" class="flex flex-col gap-2 md:gap-3" id="weatherForm">
+				<label for="cityNameInput" class="text-xl font-semibold text-ligthGray md:text-2xl">Location</label>
+				<div class="borderb flex gap-4 border-b border-solid border-b-ligthGray md:gap-16">
+					<input type="text" name="cityNameInput" id="cityNameInput" class="text-2xl font-bold text-darkGray focus:outline-none md:text-3xl" />
+					<button type="submit" id="submitButton" class="border-none text-lg font-semibold text-ligthGray outline-none transition-all duration-300 hover:scale-110 md:text-xl">SET</button>
+				</div>
+			</form>
+			<div class="custom-shadow flex max-w-xl flex-col items-center justify-center overflow-hidden rounded-2xl bg-gray-300 p-12 md:flex-row">
+				<img src="src/images/02d@2x.png" alt="icon" title="icon" class="block size-48 cursor-pointer transition-all duration-300 hover:scale-110 md:size-[15rem]" id="displayImage" />
+				<div class="flex flex-col items-start justify-center gap-2 p-4 md:p-6">
+					<h2 class="text-6xl font-semibold text-darkGray md:text-[85px]" id="displayTemperature">30.1°</h2>
+					<p class="text-2xl font-semibold text-darkGray md:text-3xl" id="displayStatus">few clouds</p>
+					<p class="text-xl font-medium text-ligthGray md:text-2xl" id="displayTime">Monday, 01 January</p>
+				</div>
+			</div>
+			<div class="mt-4 w-[280px] border-b border-solid border-b-ligthGray text-xl font-semibold text-ligthGray md:w-[510px] md:text-2xl">Simple Weather App</div>
+		</div>
+
+		<script src="src/js/script.js"></script>
+	</body>
+</html>

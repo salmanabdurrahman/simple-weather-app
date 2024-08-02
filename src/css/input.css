@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		font-family: NTR, sans-serif;
+	}
+
+	.custom-shadow {
+		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	}
+}
