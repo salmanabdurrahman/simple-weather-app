@@ -803,6 +803,34 @@ body {
   transition-duration: 300ms;
 }
 
+.placeholder\:font-bold::-moz-placeholder {
+  font-weight: 700;
+}
+
+.placeholder\:font-bold::placeholder {
+  font-weight: 700;
+}
+
+.placeholder\:text-darkGray::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(72 72 74 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-darkGray::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(72 72 74 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-ligthGray::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(126 126 127 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-ligthGray::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(126 126 127 / var(--tw-text-opacity));
+}
+
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
