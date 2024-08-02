@@ -47,7 +47,7 @@ simple-weather-app/
 
 1. Clone repositori ini ke dalam direktori lokal Anda.
     ```bash
-    https://github.com/salmanabdurrahman/simple-weather-app.git
+    git clone https://github.com/salmanabdurrahman/simple-weather-app.git
     ```
 2. Masuk ke direktori proyek.
     ```bash
