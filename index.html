@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Simple Weather App</title>
 		<link rel="shortcut icon" href="src/icons/icon.png" type="image/x-icon" />
+		<script src="https://cdn.tailwindcss.com"></script>
 		<link rel="stylesheet" href="public/css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +22,7 @@
 			<form action="" method="get" class="flex flex-col gap-2 md:gap-3" id="weatherForm">
 				<label for="cityNameInput" class="text-xl font-semibold text-ligthGray md:text-2xl">Location</label>
 				<div class="borderb flex gap-4 border-b border-solid border-b-ligthGray md:gap-16">
-					<input type="text" name="cityNameInput" id="cityNameInput" class="text-2xl font-bold text-darkGray focus:outline-none md:text-3xl" />
+					<input type="text" name="cityNameInput" id="cityNameInput" class="text-2xl font-bold text-darkGray placeholder:font-bold placeholder:text-ligthGray focus:outline-none md:text-3xl" placeholder="Enter city" />
 					<button type="submit" id="submitButton" class="border-none text-lg font-semibold text-ligthGray outline-none transition-all duration-300 hover:scale-110 md:text-xl">SET</button>
 				</div>
 			</form>
